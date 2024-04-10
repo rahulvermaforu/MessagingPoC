@@ -31,7 +31,7 @@ app.MapPost("/order/create", (Order order, [FromServices] OrderService orderServ
 {
     app.Logger.LogInformation("Order Received for {Item}", order);
     logger.LogInformation("Order Received for {Item}", order);
-    orderService.LogOrder(order);
+    orderService.ReceiveOrder(order);
 
     return order;
 });
