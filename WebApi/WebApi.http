@@ -4,3 +4,14 @@ GET {{WebApi_HostAddress}}/weatherforecast/
 Accept: application/json
 
 ###
+
+
+
+POST {{WebApi_HostAddress}}/order/create/
+Accept: application/json
+Content-Type: application/json
+
+{
+  "name": "Dell Laptop",
+  "price": 2499.99
+}
